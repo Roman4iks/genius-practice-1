@@ -13,7 +13,7 @@
     <title>Сучасна пекарня</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -142,7 +142,7 @@
         <div class="container">
           <h2 class="formats-title section-title centered">Формати</h2>
           <div class="formats-container">
-            <button class="carousel-button" type="button">
+            <button class="carousel-button previews" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -191,7 +191,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -207,7 +207,49 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб зв'язались з тобою</p>
-              <!-- FORM -->
+              <form
+                name="contact-form"
+                autocomplete="off"
+                action="#"
+                method="post"
+              >
+                <div class="form-field">
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ім'я"
+                  />
+                </div>
+                <div class="form-field">
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-phone"
+                    name="user-phone"
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="form-field">
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Пошта"
+                  />
+                </div>
+                <button class="form-button button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-terms-link" href="#"
+                    >з політекою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -289,10 +331,53 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-button-close" type="button">Close</button>
+        <button class="button modal-button-close" type="button">Close</button>
+        <form
+          name="contact-name"
+          autocomplete="on"
+          novalidate
+          action="#"
+          method="post"
+        >
+          <h2>Замовити дзвінок</h2>
+          <p>Залишіть заявку та наш спеціаліст зв'яжиться з Вами!</p>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ім'я"
+            />
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              id="user-phone"
+              name="user-phone"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              id="user-email"
+              name="user-email"
+              placeholder="Пошта"
+            />
+          </div>
+          <button class="form-button button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-terms-link" href="#">з політекою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
   </body>
-
   <script src="./js/modal.js"></script>
 </html>
