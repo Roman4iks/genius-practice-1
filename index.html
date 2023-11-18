@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -150,6 +150,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/walrus-format.jpg"
+                    alt="Walrus format"
+                  />
                   <div class="format-text">
                     <h3 class="format-title" lang="en">Walrus</h3>
                     <p>Площа: до 120 м2</p>
@@ -164,22 +169,32 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
-                  <div class="format-text">
-                    <h3 class="format-title" lang="en">Walrus</h3>
-                    <p>Площа: до 120 м2</p>
-                    <p>Меню: розширене меню</p>
-                    <p>
-                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                      офіціанти-різнороби
-                    </p>
-                    <p>Посадкові місця: є</p>
-                  </div>
-                </article>
-              </li>
-              <li class="formats-item">
-                <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/horseshoe-format.jpg"
+                    alt="Horseshoe format"
+                  />
                   <div class="format-text">
                     <h3 class="format-title" lang="en">Horseshoe</h3>
+                    <p>Площа: до 120 м2</p>
+                    <p>Меню: розширене меню</p>
+                    <p>
+                      Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                      офіціанти-різнороби
+                    </p>
+                    <p>Посадкові місця: є</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/handlebar-format.jpg"
+                    alt="Handlebar format"
+                  />
+                  <div class="format-text">
+                    <h3 class="format-title" lang="en">Handlebar</h3>
                     <p>Площа: до 120 м2</p>
                     <p>Меню: розширене меню</p>
                     <p>
@@ -220,6 +235,9 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Ім'я"
+                    maxlength="20"
+                    minlength="2"
+                    required
                   />
                 </div>
                 <div class="form-field">
@@ -228,7 +246,10 @@
                     type="text"
                     id="user-phone"
                     name="user-phone"
+                    minlength="6"
+                    maxlength="22"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
                 <div class="form-field">
@@ -236,8 +257,11 @@
                     class="form-input"
                     type="text"
                     id="user-email"
+                    minlength="10"
+                    maxlength="100"
                     name="user-email"
                     placeholder="Пошта"
+                    required
                   />
                 </div>
                 <button class="form-button button" type="submit">
@@ -332,13 +356,7 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="button modal-button-close" type="button">Close</button>
-        <form
-          name="contact-name"
-          autocomplete="on"
-          novalidate
-          action="#"
-          method="post"
-        >
+        <form name="contact-name" autocomplete="on" action="#" method="post">
           <h2>Замовити дзвінок</h2>
           <p>Залишіть заявку та наш спеціаліст зв'яжиться з Вами!</p>
           <div class="form-field">
@@ -348,6 +366,9 @@
               id="user-name"
               name="user-name"
               placeholder="Ім'я"
+              maxlength="20"
+              minlength="2"
+              required
             />
           </div>
           <div class="form-field">
@@ -356,7 +377,10 @@
               type="text"
               id="user-phone"
               name="user-phone"
+              minlength="6"
+              maxlength="22"
               placeholder="Телефон"
+              required
             />
           </div>
           <div class="form-field">
@@ -364,8 +388,11 @@
               class="form-input"
               type="text"
               id="user-email"
+              minlength="10"
+              maxlength="100"
               name="user-email"
               placeholder="Пошта"
+              required
             />
           </div>
           <button class="form-button button" type="submit">
