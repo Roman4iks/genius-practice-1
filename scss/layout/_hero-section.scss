@@ -10,16 +10,14 @@
     background-position: center top;
     background-size: cover;
     padding: 272px 0;
-  }
+    
+    &__title {
+      margin-bottom: 0;
+      color: var(--color-primary-normal);
+      text-align: center;
+      font-size: 128px;
+      font-weight: 900;
+    }
+}
+
   
-  .hero-title {
-    margin-bottom: 0;
-    color: var(--color-primary-normal);
-    text-align: center;
-    font-size: 128px;
-    font-weight: 900;
-  }
-  
-  .hero-title .accent {
-    color: var(--color-brand);
-  }

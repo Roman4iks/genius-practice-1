@@ -1,0 +1,25 @@
+.address {
+  &__list,
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__link {
+    color: var(--color-primary-normal);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  &__copyright {
+    font-size: 14px;
+  }
+
+  &__social {
+    fill: var(--color-primary-normal);
+  }
+
+  &__social:hover {
+    fill: var(--color-brand);
+  }
+}

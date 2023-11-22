@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "stylelint-config-prettier-scss": "^1.0.0"
+  }
+}

@@ -8,5 +8,8 @@
   "bracketSpacing": true,
   "jsxSingleQuote": false,
   "arrowParens": "avoid",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "extends": [
+    "stylelint-config-prettier-scss"
+  ]
 }
